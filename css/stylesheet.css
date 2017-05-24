@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+
+/*icons*/
+
+.fa-twitter-square {
+	color: #55ACEE;
+}
+
+.fa-free-code-camp {
+	color: #006400;
+}
+
+.fa-comments {
+	color: #FD0061;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Lato', sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+.container {
+	padding: 40px 20px;
+}
+
+.container-spacy {
+	padding: 80px 20px;
+}
+
+
+/*header*/
+
+header#main {
+	margin-bottom: 40px;
+}
+
+header#main .brand a {
+	display: block;
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	color: #393f4a;
+	margin-bottom: 20px;
+}
+
+
+/*navigation*/
+
+nav#main ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+nav#main ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav#main ul li:last-child {
+	/*targets the last list item*/
+	margin-right: 0;
+}
+
+nav#main ul li a {
+	font-size: 78%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav#main ul li a:not(.button) {
+	color: #393f4a;
+	padding: 5px 5px;
+}
+
+
+/*gives the colour to all the elements except the element with class button*/
+
+nav#main ul li a:not(.button):hover {
+	border-bottom: 2px solid black;
+}
+
+
+/*buttons*/
+
+.button {
+	padding: 14px 30px;
+	border-radius: 5px;
+}
+
+.button-primary,
+.button-primary:active,
+.button-primary:focus {
+	background-color: #3a3a3a;
+	color: #fff;
+	border: 3px solid #3a3a3a;
+}
+
+.button-primary:hover {
+	color: #3a3a3a;
+	background-color: #fff;
+	border: 3px solid #3a3a3a;
+}
+
+.button-secondary, .button-secondary:active, .button-secondary:visited {
+	background-color: #fff;
+	color: #3a3a3a;
+	border: 3px solid #fff;
+}
+.button-secondary:hover {
+	background-color: #3a3a3a;
+	color: #fff;
+}
+
+
+/*welcome section*/
+
+.welcome {
+	margin-top: 20px;
+}
+
+.welcome h1 {
+	font-size: 5em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 72px;
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+	.welcome h1 {
+		font-size: 2.5em;
+	}
+	.button-primary {
+		margin-top: 20px;
+	}
+}
+
+/*about*/
+.about {
+	text-align: center;
+}
+.about h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+.about p {
+	word-spacing: 2px;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 60px;
+	color: #393F4A;
+}
+
+/*contact*/
+
+.contact {
+	text-align: center;
+}
+
+.contact h5 {
+	font-weight: 600;
+	font-size: 1.4em;
+	margin-bottom: 40px;
+}
+
+.contact i {
+	margin-bottom: 20px;
+}
+
+.contact h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.contact a.contactLinks {
+	color: inherit;
+}
+
+
+/*portfolio*/
+
+.portfolio {
+	text-align: center;
+}
+
+.portfolio h2 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.portfolio p {
+	font-weight: bold;
+	margin-bottom: 60px;
+	color: #393F4A;
+}
+
+.portfolio .item {
+	padding: 10px;
+	margin-top: 30px;
+	background-color: #364156;
+	border: 2px solid white;
+}
+
+.portfolio .item p {
+	display: none;
+	color: rgba(255,255,255,1);
+	background: rgba(20,40,98,0.9);
+	padding: 2px 15px 10px 15px;
+	width: 100%;
+	/*line-height: 28px;*/
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+}
+
+.portfolio .show-more {
+	margin-top: 40px;
+	font-weight: 600;
+}
+
+.portfolio ul li a {
+	color: #fff;
+	border: 2px solid transparent;
+	/*this is a trick that creates a border which if changed
+	it doesn't actually move the elements on the side
+	because they have a border too*/
+	border-radius: 5px;
+	font-weight: 600;
+	padding: 8px 20px;
+}
+.portfolio ul li a:hover {
+	border: 2px solid #fff;
+}
+.portfolio ul li.selected a {
+	background: #fff;
+	color: #9BAEC8;
+}
+/*lists*/
+
+.inline-list {
+	list-style-type: none;
+}
+
+.inline-list li {
+	display: inline-block;
+	/*displays the list items as inline but with block behaviour*/
+	margin: 0 20px;
+	margin-bottom: 20px;
+}
+
+.footer {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer p {
+	display: inline;
+}
